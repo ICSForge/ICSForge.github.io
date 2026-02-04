@@ -1,8 +1,14 @@
 theme: jekyll-theme-cayman
-title: ICSForge™
-description: OT / ICS Cybersecurity Lab & Simulation Framework
 
-# Disable GitHub edit/open-source footer
-show_excerpts: false
+title: ICSForge™
+description: OT/ICS Cybersecurity Coverage Validation Framework
+
+# Cayman-specific
+show_downloads: false
+
+# Logo
+logo: /screenshots/ICSForge_logo.png
+
+
 github:
   is_project_page: false
