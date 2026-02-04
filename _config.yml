@@ -1,0 +1,8 @@
+theme: minima
+title: ICSForge
+description: OT / ICS Cybersecurity Lab & Simulation Framework
+
+# Disable GitHub edit/open-source footer
+show_excerpts: false
+github:
+  is_project_page: false
