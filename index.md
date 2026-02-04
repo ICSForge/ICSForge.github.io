@@ -1,5 +1,5 @@
 
-![](screenshots/ICSForge.png)
+![](screenshots/ICSForge_logo.png)
 
 # ICSForge™
 
