@@ -18,7 +18,7 @@ cd ICSForge
 
 ## 🔗 Links
 
-GitHub Project: https://github.com/ICSForge/ICSForge
+GitHub Project: https://github.com/ICSForge
 ---
 
 ## Why ICSForge™?
