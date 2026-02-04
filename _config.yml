@@ -3,12 +3,3 @@ theme: jekyll-theme-cayman
 title: ICSForge™
 description: OT/ICS Cybersecurity Coverage Validation Framework
 
-# Cayman-specific
-show_downloads: false
-
-# Logo
-logo: /assets/img/ICSForge_logo.png
-
-
-github:
-  is_project_page: false
