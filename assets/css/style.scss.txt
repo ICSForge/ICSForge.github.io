@@ -1,0 +1,18 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Add logo above the big title */
+.project-name::before {
+  content: url("/assets/img/ICSForge-logo.png");
+  display: block;
+  margin: 0 auto 0.6rem auto;
+  max-width: 220px; /* tweak */
+}
+
+/* Optional: ensure the logo doesn't overflow on mobile */
+.project-name::before img {
+  max-width: 100%;
+  height: auto;
+}
