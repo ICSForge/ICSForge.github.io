@@ -3,17 +3,23 @@
 
 @import "{{ site.theme }}";
 
-/* Add logo above the big title */
-.project-name::before {
-  content: url("/assets/img/ICSForge_logo.png");
+/* Center header contents as one unit */
+.page-header {
+  text-align: center;
+}
+
+/* Logo above title, perfectly centered */
+.page-header::before {
+  content: "";
   display: block;
-  margin: 0 auto 0.6rem auto;
-  max-width: 220px; /* tweak */
+  width: 180px;          /* adjust size if needed */
+  height: 180px;
+  margin: 0 auto 0.5rem;
+  background: url("/assets/img/ICSForge_logo.png") no-repeat center;
+  background-size: contain;
 }
 
-/* Optional: ensure the logo doesn't overflow on mobile */
-.project-name::before img {
-  max-width: 100%;
-  height: auto;
+/* Optional: tighten spacing */
+.project-name {
+  margin-top: 0;
 }
-
