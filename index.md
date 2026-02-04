@@ -8,18 +8,6 @@
 ICSForge™ focuses on **what can actually be observed on the network** and generates **realistic OT traffic and PCAPs** aligned with **MITRE ATT&CK for ICS (v18)** - without exploiting real systems or causing unsafe process impact.
 
 ---
-## 📦 Quick Start
-
-```bash
-git clone https://github.com/ICSForge/ICSForge.git
-cd ICSForge
-```
----
-
-## 🔗 Links
-
-GitHub Project: https://github.com/ICSForge
----
 
 ## Why ICSForge™?
 
@@ -71,6 +59,13 @@ ICSForge™ is **defender-first**, **safe by design**, and **honest about limita
 - Not a malware platform
 - Not a process-impact simulator
 
+---
+## 📦 Quick Start
+
+```bash
+git clone https://github.com/ICSForge/ICSForge.git
+cd ICSForge
+```
 ---
 
 ## Installation
