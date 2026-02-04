@@ -60,15 +60,8 @@ ICSForge™ is **defender-first**, **safe by design**, and **honest about limita
 - Not a process-impact simulator
 
 ---
-## 📦 Quick Start
 
-```bash
-git clone https://github.com/ICSForge/ICSForge.git
-cd ICSForge
-```
----
-
-## Installation
+## Quick Start & Installation
 
 ```bash
 git clone https://github.com/ICSforge/ICSforge.git
