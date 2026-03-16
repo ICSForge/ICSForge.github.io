@@ -1,4 +1,5 @@
 
+[//]: [![CI](https://github.com/ICSforge/ICSforge/actions/workflows/ci.yml/badge.svg)](https://github.com/ICSforge/ICSforge/actions/workflows/ci.yml)
 [![CI](https://github.com/ICSforge/ICSforge/actions/workflows/ci.yml/badge.svg)](https://github.com/ICSforge/ICSforge/actions/workflows/ci.yml)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/ICSforge/ICSforge/actions/workflows/ci.yml)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
@@ -65,38 +66,20 @@ pip install -e .
 chmod +x icsforge.sh
 ```
 
-### Or with Docker
-
-```bash
-docker compose up
-# Sender UI:   http://localhost:8080
-# Receiver UI: http://localhost:9090
-```
-
-### Generate a PCAP (offline)
-
-```bash
-icsforge generate --name T0855__unauth_command__modbus --outdir out/
-# → out/pcaps/offline.pcap + out/events/offline.jsonl
-```
-
-### Send live traffic to receiver
-
-```bash
-# Terminal 1: start receiver
-sudo icsforge-receiver --bind 127.0.0.1
-
-# Terminal 2: send traffic
-icsforge send --name T0855__unauth_command__modbus \
-  --dst-ip 127.0.0.1 --confirm-live-network
-```
-
 ### Web UI
 
 ```bash
 sudo ./icsforge.sh web        				# Sender dashboard on :8080
 sudo ./icsforge.sh receiver   				# Receiver dashboard on :9090
 sudo ./icsforge.sh receiver --l2-iface eth0 # Receiver with Profinet Listener
+```
+
+### Or with Docker
+
+```bash
+docker compose up
+# Sender UI:   http://localhost:8080
+# Receiver UI: http://localhost:9090
 ```
 
 ### Authentication
@@ -126,6 +109,25 @@ The receiver automatically notifies the sender when it receives ICSForge traffic
 ```bash
 # Or configure via CLI
 icsforge-receiver --callback-url http://sender-ip:8080/api/receiver/callback
+```
+ICSForge can be run from **command line interface** as well;
+
+### Running from CLI: Generate a PCAP from CLI (offline)
+
+```bash
+icsforge generate --name T0855__unauth_command__modbus --outdir out/
+# → out/pcaps/offline.pcap + out/events/offline.jsonl
+```
+
+### Running from CLI: Send live traffic to receiver from CLI
+
+```bash
+# Terminal 1: start receiver
+sudo icsforge-receiver --bind 127.0.0.1
+
+# Terminal 2: send traffic
+icsforge send --name T0855__unauth_command__modbus \
+  --dst-ip 127.0.0.1 --confirm-live-network
 ```
 
 ---
